@@ -35,6 +35,11 @@ public class PetController {
 	//@Autowired
 	private PetMapper mapper;
 
+	/**
+	 *  Change
+	 * @param petService
+	 * @param mapper
+	 */
 	public PetController(PetService petService, PetMapper mapper){
 		this.petService = petService;
 		this.mapper = mapper ;
