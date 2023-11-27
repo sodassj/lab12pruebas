@@ -103,8 +103,8 @@ public class PetController {
 		} catch (PetNotFoundException e) {
 			return ResponseEntity.notFound().build();
 		}
-		return ResponseEntity.ok(petTO);
-
+		//return ResponseEntity.ok(petTO);
+		return null;
 	}
 
 	/**
