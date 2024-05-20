@@ -144,5 +144,13 @@ public class PetControllerTest {
 				.andExpect(status().isOk());
 	}
 
+
+	@Test
+	public void testDeletePetKO() throws Exception {
+
+		mockMvc.perform(delete("/pets/" + "1000" ))
+				/*.andDo(print())*/
+				.andExpect(status().isNotFound());
+	}
 }
     
