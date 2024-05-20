@@ -35,9 +35,9 @@
 		</dependency>
 
 		<dependency>
-			<groupId>mysql</groupId>
-			<artifactId>mysql-connector-java</artifactId>
-			<version>8.0.27</version>
+			<groupId>com.mysql</groupId>
+			<artifactId>mysql-connector-j</artifactId>
+			<scope>runtime</scope>
 		</dependency>
 
 		<dependency>
@@ -81,15 +81,23 @@
 			<scope>runtime</scope>
 		</dependency>
 
+		<!-- https://mvnrepository.com/artifact/org.jacoco/jacoco-maven-plugin -->
+		<!--
+		<dependency>
+			<groupId>org.jacoco</groupId>
+			<artifactId>jacoco-maven-plugin</artifactId>
+			<version>0.8.12</version>
+		</dependency>
+		-->
 	</dependencies>
-
+<!--
 	<distributionManagement>
 		<repository>
 			<id>my-repository</id>
 			<url>https://example.com/repository</url>
 		</repository>
 	</distributionManagement>
-
+-->
 	<build>
 		<plugins>
 			<plugin>
@@ -115,10 +123,11 @@
 				</configuration>
 			</plugin>
 
-			<!-- JaCoCo Plugin -->
+			<!-- JaCoCo Plugin  -->
 			<plugin>
 				<groupId>org.jacoco</groupId>
 				<artifactId>jacoco-maven-plugin</artifactId>
+				<version>0.8.12</version>
 				<executions>
 					<execution>
 						<goals>
