@@ -53,7 +53,7 @@ public class PetController {
 	@GetMapping(value = "/pets")
 	public ResponseEntity<List<PetTO>> findAllPets() {
 
-		List<Pet> pets = (List<Pet>) petService.findAll();
+		List<Pet> pets = petService.findAll();
 		log.info("pets: " + pets);
 		pets.forEach(item -> log.info("Pet >>  {} ", item));
 
