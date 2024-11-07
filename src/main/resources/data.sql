@@ -25,4 +25,11 @@ INSERT INTO owners VALUES (8, 'Maria', 'Escobito', '345 Maple St.', 'Madison', '
 INSERT INTO owners VALUES (9, 'David', 'Schroeder', '2749 Blackhawk Trail', 'Madison', '6085559435');
 INSERT INTO owners VALUES (10, 'Carlos', 'Estaban', '2335 Independence La.', 'Waunakee', '6085555487');
 
+INSERT INTO vets VALUES (1, 'James', 'Carter');
+INSERT INTO vets VALUES (2, 'Helen', 'Leary');
+INSERT INTO vets VALUES (3, 'Linda', 'Douglas');
+INSERT INTO vets VALUES (4, 'Rafael', 'Ortega');
+INSERT INTO vets VALUES (5, 'Henry', 'Stevens');
+INSERT INTO vets VALUES (6, 'Sharon', 'Jenkins');
+
 
